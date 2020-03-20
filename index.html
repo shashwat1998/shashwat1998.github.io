@@ -11,7 +11,27 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!--sweet alert-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+        <script src="./assets/js/mytextanimation.js"></script>
+
+
+        <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+        <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+        <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+        <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+        <script src="./assets/js/mytextanimation.js"></script>
+        <script src="./assets/js/myprojecttimeline.js"></script>
+        <script src="./assets/js/scrolltotop.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js" type="text/javascript"></script>
+
+
+      
         <link rel="stylesheet" href="css/main.css">
         
         <!--link bootstrap -->
@@ -44,7 +64,7 @@
 	</head>
 	<body class="index-page sidebar-collapse">
         <section id="menu">
-        <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent ">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" id="navbar" >
             <div class="container">
               <div class="collapse navbar-collapse justify-content-end" id="navigation"
                 data-nav-image="./assets/img/blurred-image-1.jpg">
@@ -113,6 +133,94 @@
             </div>
                 
       </section>
-	</body>
-	<script src="js/index.js"></script>
+      <section id="introduction" data-background-color="black">
+        <div class="nes-container with-title is-centered">
+
+          <h1 class="title" style=" background-color:black; font-size:xx-large" >About Me</h1>
+
+            <div class="container">
+                  <h5 class="title" id="replaceStrings">Coder | Developer | Reader | Gamer </h5>
+                  <br>
+                  <p class="description">
+                    Born in Allahabad, brought up in Lucknow with a knack for everything geeky. 
+                  </p>
+                  <p class="description">
+                    I do application development, machine learning and everything else. I am overwhelmingly 
+                    in love with Java, Python etc.
+                  </p>
+                  <p class="description">
+                    How can I help?
+
+                  </p>
+                  <p class="description">
+                    Something in common?
+                    Yes, let's have a talk about it and grow together.
+                  </p>
+                  <p class="description">
+                    Nothing in common?
+                    It's okay, introduce me to everything I'm missing.
+                  </p>
+            </div>
+          
+      </div>
+    </section>
+      <!--section style="width: 100%;">
+        <div id="particles-js">
+    
+    
+      </div-->
+
+        <!-- stats - count particles -->
+        <!--div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+        </div-->
+
+      <!--/section-->
+      <section class="ps-timeline-sec">
+        <div class="container with-title">
+          <h1 class="title" style=" text-align:center; font-size:xx-large" >Education</h1>
+            <ol class="ps-timeline">
+                <li>
+                    <div class="img-handler-top">
+                        <img src="kid.jpeg" alt=""/>
+                    </div>
+                    <div class="ps-bot">
+                        <p>St Dominic Savio Sollege</p>
+                    </div>
+                    <span class="ps-sp-top" style="font-size: large; padding-top:3%">01</span>
+                </li>
+                <li>
+                    <div class="img-handler-bot">
+                        <img src="school.jpeg" alt=""/>
+                    </div>
+                    <div class="ps-top">
+                        <p>CMS ICSE 96.4%</p>
+                    </div>
+                    <span class="ps-sp-bot" style="font-size: large; padding-top:3%">02</span>
+                </li>
+                <li>
+                    <div class="img-handler-top">
+                        <img src="adol.jpeg" alt=""/>
+                    </div>
+                    <div class="ps-bot">
+                        <p>CMS ISC 96.5%</p>
+                    </div>
+                    <span class="ps-sp-top" style="font-size: large; padding-top:3%">03</span>
+                </li>
+                <li>
+                    <div class="img-handler-bot">
+                        <img src="univ.jpeg" alt=""/>
+                    </div>
+                    <div class="ps-top">
+                        <p>MNNIT Allahabad B.Tech.</p>
+                    </div>
+                    <span class="ps-sp-bot" style="font-size: large; padding-top:3%">04</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+    
+    
+  	</body>
+  <script src="js/index.js"></script>
 </html>
