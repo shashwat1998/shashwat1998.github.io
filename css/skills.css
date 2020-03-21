@@ -54,6 +54,10 @@ p {
     position: relative;
     height: 100vh;
     width: 100%;
+    background-image: url("../duckBack2.png");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100% 100%;
     /*
     background: #f6f6f6;
     background: -moz-radial-gradient(center, ellipse cover, #f6f6f6 1%, #d3d3d3 100%);
