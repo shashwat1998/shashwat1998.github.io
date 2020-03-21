@@ -33,7 +33,10 @@
 
       
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/timeline.css">
+        <link rel="stylesheet" href="css/projectTimeline.css">
         
+
         <!--link bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="./assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
@@ -100,14 +103,14 @@
           </nav>
         </section>
         <section id="home">
-          <div class="page-header" data-parallax="true" style="background-image:url('/home/shashwat/portfolioWebsite/backImage.jpg');  background-repeat: no-repeat;
+          <div class="page-header" data-parallax="true" style="	background-image:url('images/backImage.jpg');  background-repeat: no-repeat;
           background-size: cover;">
                 <div class="container headline">
                     <div class="row justify-content-center">
                       <div class="mbr-white col-md-10">
                         <br>
                         <div class="align-center zoom">
-                          <img src="prodp.jpeg" class="image--cover zoom" style ="border-radius:50%;">
+                          <img src="images/prodp.jpeg" class="image--cover zoom" style ="border-radius:50%;">
                         </div>
                         <br>
                         <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-1">
@@ -120,13 +123,12 @@
                           <a href="https://www.mnnit.ac.in/" target="_blank" style="color:white;">MNNIT Allahabad</a>
                           <br>
                         </p>
-                        
                       </div>
-                    <div class="mbr-section-btn align-center">
-                          <button class="btn btn-md  btn-outline-light display-3" href="resume link" target="_blank"><strong>Resume</strong></button>
-                          <button class="btn btn-md  btn-outline-light display-3" href="https://github.com/shashwat1998" target="_blank"><strong>GitHub</strong></button>
-                          <button class="btn btn-md  btn-outline-light display-3" href="https://www.linkedin.com/in/" target="_blank"><strong>LinkedIn</strong></button>
-                          <button class="btn btn-md  btn-outline-light display-3" href="#contact-me"><strong>Contact </strong></button>
+                    <div class="mbr-section-btn align-center" >
+                          <button class="btn btn-md  btn-outline-light display-3" id="but_resume" href="resume link" target="_blank"><strong>Resume</strong></button>
+                          <button class="btn btn-md  btn-outline-light display-3" id="but_github" href="https://github.com/shashwat1998" target="_blank"><strong>GitHub</strong></button>
+                          <button class="btn btn-md  btn-outline-light display-3" id="but_linkedin" href="https://www.linkedin.com/in/" target="_blank"><strong>LinkedIn</strong></button>
+                          <button class="btn btn-md  btn-outline-light display-3" id="but_contact" href="#contact-me"><strong>Contact </strong></button>
                     </div>
                     </div>
                 </div>
@@ -176,13 +178,13 @@
         </div-->
 
       <!--/section-->
-      <section class="ps-timeline-sec">
+      <section class="ps-timeline-sec" id="projectSection">
         <div class="container with-title">
           <h1 class="title" style=" text-align:center; font-size:xx-large" >Education</h1>
             <ol class="ps-timeline">
                 <li>
                     <div class="img-handler-top">
-                        <img src="kid.jpeg" alt=""/>
+                        <img src="images/kid.jpeg" alt=""/>
                     </div>
                     <div class="ps-bot">
                         <p>St Dominic Savio Sollege</p>
@@ -191,7 +193,7 @@
                 </li>
                 <li>
                     <div class="img-handler-bot">
-                        <img src="school.jpeg" alt=""/>
+                        <img src="images/school.jpeg" alt=""/>
                     </div>
                     <div class="ps-top">
                         <p>CMS ICSE 96.4%</p>
@@ -200,7 +202,7 @@
                 </li>
                 <li>
                     <div class="img-handler-top">
-                        <img src="adol.jpeg" alt=""/>
+                        <img src="images/adol.jpeg" alt=""/>
                     </div>
                     <div class="ps-bot">
                         <p>CMS ISC 96.5%</p>
@@ -209,7 +211,7 @@
                 </li>
                 <li>
                     <div class="img-handler-bot">
-                        <img src="univ.jpeg" alt=""/>
+                        <img src="images/univ.jpeg" alt=""/>
                     </div>
                     <div class="ps-top">
                         <p>MNNIT Allahabad B.Tech.</p>
@@ -221,6 +223,69 @@
     </section>
     
     
+    <section class="secproj"  >
+      <h1 class="title" style=" text-align:center; font-size:xx-large" >Projects</h1>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline" style="opacity: 1.5;">
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h3 class="title">Reckognize</h3>
+                        <p class="description">
+                          An interactive website to upload an image and recognise it and display gallery of recognised images.<br>Technologies :- Flask, Python, Machine Learning, Neural Network
+                        </p>
+                    </a>
+                </div>  
+                  <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="timeline-year">2019</span>
+                            <h3 class="title">Smart Ville</h3>
+                            <p class="description">
+                              An interactive management system with intelligent pothole detection using mobile phone sensors and tagging their location<br>Technologies :- Java SE, JavaFx, Hasura GraphQL, Python, Android SDK
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="timeline-year">2018</span>
+                            <h3 class="title">SQuiz</h3>
+                            <p class="description">
+                              A quizzing platform where a teacher can add a quiz and multiple students can appear for it and gauge their performance<br>Technologies :- Java SE, JavaFx, MySQL, JFoeniX                              
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                      <a href="#" class="timeline-content">
+                          <span class="timeline-year">2018</span>
+                          <h3 class="title">Sacred Bazaar</h3>
+                          <p class="description">
+                            An e-commerce java application to sell and buy things.<br>Technologies :- Java SE, JavaFx, MySQL, JFoeniX                              
+                          </p>
+                      </a>
+                  </div>
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <span class="timeline-year">2017</span>
+                        <h3 class="title">Rakht Jeevan</h3>
+                        <p class="description">
+                          
+A emergency android app to help you reach you loved ones and
+emergency services when in need.<br>Technologies :- Android SDK, FIrebase Database                              
+                        </p>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
   	</body>
   <script src="js/index.js"></script>
 </html>
+
+
+
+
+
