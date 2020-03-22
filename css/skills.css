@@ -54,7 +54,7 @@ p {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url("../duckBack2.png");
+    background-image: url("../image2.png");
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -226,11 +226,23 @@ p {
     
     .hex-master-wrap {
     position: relative;
-    /* width: 50%; */
+    /*width: 50vw;*/
     min-width: 665px;
     height: 460px;
     }
-    
+    /*
+    @media only screen and (max-width: 660px) {
+        .hex-master-wrap{
+            position: relative;
+            top: 0;
+        }
+        .code-display {
+            position: relative;
+            color: #f6f6f6;
+            top: 0;
+            }
+    }
+    */
     .border-1,
     .border-2,
     .border-3 {

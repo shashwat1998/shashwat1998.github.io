@@ -1,0 +1,153 @@
+#experience{
+    padding: 3rem 0;
+    background-image:url('../images/image.png'); ;
+    	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: 100% 100vh;
+}
+
+#achievementsContainer{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#achievementsHeading{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#achievementsHeading h1{
+    font-size: 5rem;
+    color: #FFD600;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 1rem;
+}
+#achievementsHeading h1::before,
+#achievementsHeading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255, 0.75);
+}
+
+#achievementsHeading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+#achievementsHeading h1::after{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 90%;
+    opacity: 0;
+    bottom: -1.0rem;
+}
+#achievementsHeading h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#achievementsTimeline ul{
+    border-left: 4px solid  #FFD600;
+    /*#ffe838*/
+    /*border-radius: .8rem;*/
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+#achievementsTimeline h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    /*opacity: ;*/
+}
+#achievementsTimeline .date{
+    border-bottom: 1px solid #FFD600;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+#achievementsTimeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+#achievementsTimeline .date::before,
+#achievementsTimeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#achievementsTimeline .date::before{
+    content: attr(date-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+#achievementsTimeline .date::after{
+    content: '';
+   /* box-shadow: 0 0 0 4px #fd575bf;*/
+   /* box-shadow: #fd57bf 0 0 0 ;*/
+    box-shadow: 0 0 0 4px #FFD600;
+    border-radius: 100%;
+    left: -7.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #313534;
+}
+
+/*
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,214,0,0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(255,214,0,0.0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,214,0,0.99);
+    }
+
+}
+*/
+@media screen and (max-width: 768px) {
+    #achievementsTimeline ul{
+        margin: 0 0 0 auto;
+    }
+    #achievementsTimeline .date:before{
+        left: -20rem;
+    }
+    #achievementsTimeline .date::after{
+        left: -5.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #achievementsTimeline h1{
+        font-size: 2rem;
+    }
+    #achievementsTimeline h2{
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+    #achievementsTimeline p{
+        font-size: 1.2rem;
+    }
+    #achievementsTimeline .date::before{
+        font-size: 1.4rem;
+    }
+    
+}
+
