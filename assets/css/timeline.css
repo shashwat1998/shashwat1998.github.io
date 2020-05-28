@@ -13,7 +13,7 @@
 		height: 10px;
 		border-radius: 100%;
 		position: absolute;
-		top: 130px !important;
+		top: 190px !important;
 		left: 36px !important;
    }
 	.ps-timeline-sec .container ol:after {
@@ -54,7 +54,7 @@
 		margin-top: 0 !important;
    }
 	.ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
-		width: 100%;
+		width: 80px;
    }
 	.ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
 		margin-bottom: 0 !important;
@@ -123,7 +123,7 @@
 	border-radius: 100%;
 	position: absolute;
 	left: 8px;
-	top: 49.5%;
+	top: 98.5%;
 }
 .ps-timeline-sec .container ol:after {
 	background: #348e80;
@@ -133,7 +133,7 @@
 	border-radius: 100%;
 	position: absolute;
 	right: 8px;
-	top: 49.5%;
+	top: 98.5%;
 }
 .ps-timeline-sec .container ol.ps-timeline {
 	margin: 390px 0;
